@@ -1,17 +1,54 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title id ="header">Product Landing Page</title>
-    <img id="header-img" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fstatic01.nyt.com%2Fimages%2F2022%2F04%2F04%2Fmultimedia%2F15ai-nocode%2F15ai-nocode-mobileMasterAt3x.jpg&imgrefurl=https%3A%2F%2Fwww.nytimes.com%2F2022%2F03%2F15%2Ftechnology%2Fai-no-code.html&tbnid=TWOPMIDNwf2CYM&vet=12ahUKEwj4jK3h0Iz5AhXAybsIHRyQCt0QMygBegUIARDeAQ..i&docid=s-FjQYqmGw1ACM&w=1800&h=1206&q=code&ved=2ahUKEwj4jK3h0Iz5AhXAybsIHRyQCt0QMygBegUIARDeAQ" alt="">
-    <nav>
-      id="nav-bar"
-      <link scr ="https://www.microverse.org/" rel="" href="">
-      <link scr="https://www.freecodecamp.org/" rel="" href="">
-    </nav>
-    <video src="https://www.youtube.com/watch?v=YPE2dO5sII0"></video>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Product Landing Page</title>
   </head>
   <body>
-
+    <div class="container">
+      <header class="header" id="header">
+        <div class="logo">
+          <img
+            id="header-img"
+            src="pngtree-headphone-glyph-icon-vector-png-image_1904115.jpg"
+            alt="logo"
+          />
+        </div>
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#news">Prices</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#home">Home</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="section1" id="news"></div>
+      <div class="section2" id="about">
+        <iframe
+          id="video"
+          width="420"
+          height="315"
+          src="https://www.youtube.com/embed/tgbNymZ7vqY"
+        >
+        </iframe>
+      </div>
+      <div class="section3" id="contact">
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter you email for our newsletter"
+            required
+          />
+          <input id="submit" type="submit" value="Submit Now!" />
+        </form>
+      </div>
+      <div class="footer" id="home"></div>
+    </div>
   </body>
 </html>
